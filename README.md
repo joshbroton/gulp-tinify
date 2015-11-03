@@ -1,18 +1,18 @@
-# [gulp](https://github.com/creative/gulp-tinyimg)-tinyimg
+# gulp-tinify
 Minify compatible files using [tinypng](https://tinypng.com/)'s API
 
 ## Installation
 ```
-npm install --save-dev gulp-tinyimg
+npm install --save-dev gulp-tinify
 ```
 
 ## Usage
 
 ```js
 var gulp = require('gulp');
-var tinyimg = require('gulp-tinyimg');
+var tinyimg = require('gulp-tinify');
 
-gulp.task('tinyimg', function() {
+gulp.task('tinify', function() {
     gulp.src('/img/**/*')
         .pipe(tinyimg('TinyPNGAPIKey'))
         .pipe(gulp.dest('/dest/img'));

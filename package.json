@@ -1,11 +1,11 @@
 {
-  "name": "gulp-tinyimg",
+  "name": "gulp-tinify",
   "version": "0.0.1",
   "description": "Minify PNG, JPEG, and GIF images via TinyPNG's API",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshbroton/gulp-tinyimg.git"
+    "url": "git+https://github.com/joshbroton/gulp-tinify.git"
   },
   "author": "Josh Broton <joshbroton@gmail.com> (joshbroton.com)",
   "engines": {
@@ -16,7 +16,6 @@
   ],
   "keywords": [
     "gulpplugin",
-    "tinyimg",
     "tinypng",
     "tinify",
     "image",
@@ -43,9 +42,9 @@
   },
   "devDependencies": {},
   "bugs": {
-    "url": "https://github.com/joshbroton/gulp-tinyimg/issues"
+    "url": "https://github.com/joshbroton/gulp-tinify/issues"
   },
-  "homepage": "https://github.com/joshbroton/gulp-tinyimg#readme",
+  "homepage": "https://github.com/joshbroton/gulp-tinify#readme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
