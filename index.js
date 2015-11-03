@@ -8,7 +8,7 @@ var fs          = require('fs'),
 
 const PLUGIN_NAME = 'gulp-tinyimg';
 
-function tinyimg(apiKey, file) {
+function tinypng(apiKey, file) {
     var validExtensions = ['.png', '.jpg', '.jpeg', '.gif'];
 
     if(!apiKey) {
@@ -41,4 +41,4 @@ function tinyimg(apiKey, file) {
     return stream;
 };
 // Exporting the plugin main function
-module.exports = tinyimg;
+module.exports = tinypng;

@@ -10,11 +10,11 @@ npm install --save-dev gulp-tinify
 
 ```js
 var gulp = require('gulp');
-var tinyimg = require('gulp-tinify');
+var tinify = require('gulp-tinify');
 
 gulp.task('tinify', function() {
     gulp.src('/img/**/*')
-        .pipe(tinyimg('TinyPNGAPIKey'))
+        .pipe(tinify('TinyPNGAPIKey'))
         .pipe(gulp.dest('/dest/img'));
 });
 ```
