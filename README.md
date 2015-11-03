@@ -1,5 +1,5 @@
 # gulp-tinify
-Minify compatible files using [tinypng](https://tinypng.com/)'s API
+Minify compatible files using [TinyPNG](https://tinypng.com/)'s API
 
 ## Installation
 ```
