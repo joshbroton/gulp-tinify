@@ -1,0 +1,46 @@
+{
+  "name": "gulp-tinyimg",
+  "version": "0.0.1",
+  "description": "Minify PNG, JPEG, and GIF images via TinyPNG's API",
+  "license": "MIT",
+  "repository": "joshbroton/gulp-tinyimg",
+  "author": {
+    "name": "Josh Broton",
+    "email": "joshbroton@gmail.com",
+    "url": "joshbroton.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "tinyimg",
+    "tinypng",
+    "tinify",
+    "image",
+    "img",
+    "picture",
+    "photo",
+    "graphic",
+    "minify",
+    "minifier",
+    "optimize",
+    "optimizer",
+    "compress",
+    "png",
+    "jpg",
+    "jpeg",
+    "gif"
+  ],
+  "dependencies": {
+    "fs": "0.0.2",
+    "gulp-util": "^3.0.7",
+    "path": "^0.12.7",
+    "through2-concurrent": "^1.1.0",
+    "tinify": "^1.1.1"
+  },
+  "devDependencies": {}
+}
