@@ -3,12 +3,11 @@
   "version": "0.0.1",
   "description": "Minify PNG, JPEG, and GIF images via TinyPNG's API",
   "license": "MIT",
-  "repository": "joshbroton/gulp-tinyimg",
-  "author": {
-    "name": "Josh Broton",
-    "email": "joshbroton@gmail.com",
-    "url": "joshbroton.com"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshbroton/gulp-tinyimg.git"
   },
+  "author": "Josh Broton <joshbroton@gmail.com> (joshbroton.com)",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -42,5 +41,13 @@
     "through2-concurrent": "^1.1.0",
     "tinify": "^1.1.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/joshbroton/gulp-tinyimg/issues"
+  },
+  "homepage": "https://github.com/joshbroton/gulp-tinyimg#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
