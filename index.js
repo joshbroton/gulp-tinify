@@ -9,7 +9,7 @@ var fs          = require('fs'),
 const PLUGIN_NAME = 'gulp-tinyimg';
 
 function tinypng(apiKey, file) {
-    var validExtensions = ['.png', '.jpg', '.jpeg', '.gif'];
+    var validExtensions = ['.png', '.jpg', '.jpeg'];
 
     if(!apiKey) {
         throw new PluginError(PLUGIN_NAME, 'We can\'t upload images without your API Key');
