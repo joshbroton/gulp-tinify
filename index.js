@@ -16,29 +16,30 @@ function tinypng(apiKey, file) {
     }
     tinify.key = apiKey;
 
-    var stream = through.obj(function(file) {
+    return through.obj(function(file, enc, cb) {
         if(file.isNull()) {
+            cb(null, file);
             return;
         }
 
         if(file.isStream()) {
-            throw new PluginError(PLUGIN_NAME, 'Streams are not supported');
+            cb(new gutil.PluginError(PLUGIN_NAME, 'Streaming not supported'));
+            return;
         }
 
         if(validExtensions.indexOf(path.extname(file.path)) === -1) {
             gutil.log(PLUGIN_NAME + ': Skipping unsupported image ' + file.path);
+            cb(null, file);
             return;
         }
 
         tinify.fromBuffer(file.contents).toBuffer(function(err, resultData) {
-            if(err) throw new PluginError(PLUGIN_NAME, err);
-
-            file.contents = resultData;
-            stream.push(file);
+            if(!err) {
+              file.contents = resultData;
+            }
+            cb(null, file);
         })
     });
-
-    return stream;
 };
 // Exporting the plugin main function
 module.exports = tinypng;
