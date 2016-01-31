@@ -1,6 +1,6 @@
 {
   "name": "gulp-tinify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Minify PNG, JPEG, and GIF images via TinyPNG's API",
   "license": "MIT",
   "repository": {
